@@ -1,6 +1,6 @@
-POST https://shorturl-nodejs-api-vercel.vercel.app/api/url/shorten
+POST https://shorturl-nodejs-api-vercel-pjqezslh7-kantavit.vercel.app/api/url/shorten
 Content-Type: application/json
 
 {
-    "longUrl": "https://careers.shopee.co.th/about"
+    "longUrl": "https://www.google222.com/"
 }

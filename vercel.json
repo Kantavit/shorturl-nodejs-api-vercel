@@ -11,5 +11,7 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
-    ]
+    ],
+    "devCommand": "nodemon index.js",
+    "buildCommand": "node index.js"
 }
