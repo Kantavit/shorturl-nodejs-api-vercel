@@ -1,8 +1,10 @@
 const express = require('express');
 const connectDB = require('./db');
-const path = require("path")
+const path = require("path");
 process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/")
 
+const cors = require('cors');
+app.use(cors());
 
 const app = express();
 
