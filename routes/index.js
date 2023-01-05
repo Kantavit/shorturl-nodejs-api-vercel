@@ -5,6 +5,11 @@ const Url = require('../models/url');
 
 //@route    GET /:code
 //@desc     Redirect to long/original URL
+
+router.get('/', (req, res) => {
+    res.send('The API is running');
+})
+
 router.get('/:code', async(req, res) =>{
     try {
         const url = await Url.findOne({ urlCode: req.params.code });
