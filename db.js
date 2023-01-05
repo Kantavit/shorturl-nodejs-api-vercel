@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 const config = require('config');
-process.env['NODE_CONFIG_DIR'] = config.join(config.resolve("./"),"config/")
 
 const db = config.get('mongoURI');
 
-const connectDB = async() => {
+const connectDB = () => {
     try {
-        await mongoose.connect(db,{
+        mongoose.connect(db,{
             useNewUrlParser: true
         });
         console.log('MongoDB Connected')
