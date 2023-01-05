@@ -3,12 +3,12 @@ const connectDB = require('./db');
 const path = require("path");
 process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/")
 
-const cors = require('cors');
-app.use(cors());
-
 const app = express();
 
 connectDB(); // connect to database
+
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json({extended: false}));
 
