@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://test:test@shorturl.0fx16aj.mongodb.net/?retryWrites=true&w=majority",
+    "baseURL": "https://shorturl-nodejs-api-vercel.vercel.app"
+}
