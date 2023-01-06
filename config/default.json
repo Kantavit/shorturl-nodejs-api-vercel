@@ -1,0 +1,4 @@
+{
+    "mongoURI": "Place MongoDB Atlas URI here",
+    "baseURL": "http://localhost:5000"
+}
